@@ -39,3 +39,6 @@ models:
     final:
       +schema: final
       +materialized: table
+
+seeds:
+  +schema: seeds
