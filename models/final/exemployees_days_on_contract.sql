@@ -1,6 +1,6 @@
 {{
     config(
-        post_hook='alter view {{ this }} add row access policy production.security_policies.employees_policy on (team)'
+        post_hook='alter table {{ this }} add row access policy production.security_policies.employees_policy on (team)'
     )
 }}
 
