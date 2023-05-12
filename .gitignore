@@ -1,4 +1,4 @@
-
+analyses/sandbox.sql
 target/
 dbt_packages/
 logs/

@@ -32,3 +32,10 @@ models:
   datastack_in_a_day:
     staging:
       +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    final:
+      +schema: final
+      +materialized: table
