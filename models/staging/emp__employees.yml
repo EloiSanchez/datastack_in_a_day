@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: emp__employees
+    columns:
+      - name: team
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 1
+              max_value: 10
