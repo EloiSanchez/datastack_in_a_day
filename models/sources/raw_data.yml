@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: employee_data
+    database: raw_data
+    schema: employees
+
+    tables:
+      - name: employees
+      - name: employee_info
+  
+  
+  - name: customer_data
+    database: raw_data
+    schema: poc_data_schema1
+
+    tables:
+      - name: customer
+  
+  
+  - name: geo_data
+    database: raw_data
+    schema: poc_data_schema2
+
+    tables:
+      - name: nation
+      - name: region
