@@ -30,3 +30,5 @@ exemployees_days_on_contract as (
 
 -- final
 select * from exemployees_days_on_contract
+
+--final comment
