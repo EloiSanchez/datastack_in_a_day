@@ -33,3 +33,10 @@ sources:
     tables:
       - name: orders_timestamp
       - name: orders_check
+
+  - name: inc_data
+    database: raw_data
+    schema: incremental
+
+    tables:
+      - name: incremental_data
