@@ -25,3 +25,11 @@ sources:
     tables:
       - name: nation
       - name: region
+  
+  - name: order_data
+    database: raw_data
+    schema: snapshot_data
+
+    tables:
+      - name: orders_timestamp
+      - name: orders_check
