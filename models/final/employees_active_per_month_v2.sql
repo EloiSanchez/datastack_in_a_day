@@ -35,5 +35,5 @@ r_employees
 select 
     year(count_date) as year,
     month(count_date) as month,
-    count(*)
+    count(*) as active_employees
 from r_employees group by year, month
