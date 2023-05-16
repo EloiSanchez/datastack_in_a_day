@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: inc__incremental_model
+    columns:
+      - name: slowly_transformed
+        tests:
+          - assert_positive_column
