@@ -32,3 +32,4 @@ sources:
 
     tables:
       - name: orders_timestamp
+      - name: orders_check
