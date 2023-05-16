@@ -1,0 +1,1 @@
+select * from {{ source('inc_data', 'incremental_data') }}
