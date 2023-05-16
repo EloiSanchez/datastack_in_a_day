@@ -42,3 +42,6 @@ models:
 
 seeds:
   +schema: seeds
+
+tests:
+  +store_failures: true
