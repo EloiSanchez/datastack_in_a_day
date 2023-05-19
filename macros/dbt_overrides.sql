@@ -5,10 +5,10 @@
 
 {%- set default_schema = target.schema -%}
 
-{%- if custom_schema_name is none or target.name.startswith('ci') -%}
+{%- if custom_schema_name is none -%}
 	{{ default_schema }}
 	{{ log("Setting Default Schema: {0}".format(target.schema)) }}
-{%- elif target.name.startswith('dev') -%}
+{%- elif target.name.startswith('dev') or target.name.startswith('ci') -%}
     {%- set dev_schema =  default_schema + custom_schema_name -%}
     {{ default_schema | trim }}_{{ custom_schema_name | trim}}
 	{{ log("Setting Development Schema: {0}".format(dev_schema)) }}
