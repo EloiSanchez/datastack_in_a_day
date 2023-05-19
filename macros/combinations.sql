@@ -7,7 +7,7 @@
             trim(split_part(value, ',', 2), '" ') as value_2 
     {% else %}
         select trim(value, '"') as value 
-    {%- endif -%}
+    {% endif %}
     
         from table(flatten(array_construct(
     {%- for item1 in items1 -%}
