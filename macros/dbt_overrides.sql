@@ -5,7 +5,7 @@
 
 {%- set default_schema = target.schema -%}
 
-{%- if custom_schema_name is none -%}
+{%- if custom_schema_name is none or target.name.startswith('ci') -%}
 	{{ default_schema }}
 	{{ log("Setting Default Schema: {0}".format(target.schema)) }}
 {%- elif target.name.startswith('dev') -%}
