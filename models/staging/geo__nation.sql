@@ -4,3 +4,4 @@ select
     n_name as name,
     n_comment as comment
 from {{ source('geo_data', 'nation') }}
+-- final test for CI
