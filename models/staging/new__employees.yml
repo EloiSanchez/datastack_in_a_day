@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: new__employees
+    description: ""
+    columns:
+      - name: id
+        description: ""
+
+      - name: start_date
+        description: ""
+
+      - name: end_date
+        description: ""
+        meta:
+          masking_policy: masking_employee
+
+      - name: team
+        description: ""
