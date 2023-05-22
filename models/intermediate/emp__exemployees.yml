@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: emp__exemployees
+    description: ""
+    columns:
+      - name: id
+        description: ""
+
+      - name: start_date
+        description: ""
+
+      - name: end_date
+        meta:
+          masking_policy: masking_employee
+
+      - name: team
+        description: ""
