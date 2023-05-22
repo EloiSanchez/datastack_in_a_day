@@ -1,6 +1,11 @@
 {{
     config(
-        post_hook='alter view {{ this }} add row access policy production.security_policies.employees_policy on (team)'
+        post_hook=[
+                "{{ create_rla_employees(model.database, model.schema) }}",
+                "alter view {{ this }} add row access policy {{ model.database }}.{{ model.schema }}.rla_employees on (team)",
+                "{{ dbt_snow_mask.create_masking_policy('models') }}",
+                "{{ dbt_snow_mask.apply_masking_policy('models') }}"
+            ]
     )
 }}
 
