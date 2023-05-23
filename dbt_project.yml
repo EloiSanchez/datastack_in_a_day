@@ -46,4 +46,5 @@ seeds:
 tests:
   +store_failures: true
 
-# neewwwww feature
+# tests:
+#   +store_failures: true
