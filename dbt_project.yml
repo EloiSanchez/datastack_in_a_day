@@ -45,3 +45,6 @@ seeds:
 
 tests:
   +store_failures: true
+
+# tests:
+#   +store_failures: true
