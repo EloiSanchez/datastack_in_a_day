@@ -45,3 +45,5 @@ seeds:
 
 tests:
   +store_failures: true
+
+# neewwwww feature
